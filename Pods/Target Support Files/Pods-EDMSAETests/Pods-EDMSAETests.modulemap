@@ -1,0 +1,6 @@
+framework module Pods_EDMSAETests {
+  umbrella header "Pods-EDMSAETests-umbrella.h"
+
+  export *
+  module * { export * }
+}

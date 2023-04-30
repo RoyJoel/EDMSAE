@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-EDMSAE-EDMSAEUITests/Pods-EDMSAE-EDMSAEUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/JXSegmentedView/JXSegmentedView.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/TABAnimated/TABAnimated.framework
+${BUILT_PRODUCTS_DIR}/TMComponent/TMComponent.framework
+${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework
