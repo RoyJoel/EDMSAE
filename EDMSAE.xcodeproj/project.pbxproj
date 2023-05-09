@@ -9,15 +9,17 @@
 /* Begin PBXBuildFile section */
 		68D417C1195CE58ED14078E8 /* Pods_EDMSAETests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133D8F0F276568806567AB9E /* Pods_EDMSAETests.framework */; };
 		718BD1A770490FE23745281E /* Pods_EDMSAE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891FDF121B770D63AF25ACDB /* Pods_EDMSAE.framework */; };
+		A89C6CCA2A074C0F00CC0ACA /* EDOrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89C6CC92A074C0F00CC0ACA /* EDOrderDetailViewController.swift */; };
+		A89C6CCC2A074CC800CC0ACA /* EDAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89C6CCB2A074CC800CC0ACA /* EDAddressCell.swift */; };
 		A8FE981329FE5F8E00A1A2EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE981229FE5F8E00A1A2EF /* AppDelegate.swift */; };
 		A8FE981529FE5F8E00A1A2EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE981429FE5F8E00A1A2EF /* SceneDelegate.swift */; };
 		A8FE981729FE5F8E00A1A2EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE981629FE5F8E00A1A2EF /* ViewController.swift */; };
-		A8FE981A29FE5F8E00A1A2EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8FE981829FE5F8E00A1A2EF /* Main.storyboard */; };
 		A8FE981C29FE5F9000A1A2EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8FE981B29FE5F9000A1A2EF /* Assets.xcassets */; };
-		A8FE981F29FE5F9000A1A2EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8FE981D29FE5F9000A1A2EF /* LaunchScreen.storyboard */; };
 		A8FE982A29FE5F9000A1A2EF /* EDMSAETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE982929FE5F9000A1A2EF /* EDMSAETests.swift */; };
 		A8FE983429FE5F9000A1A2EF /* EDMSAEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE983329FE5F9000A1A2EF /* EDMSAEUITests.swift */; };
 		A8FE983629FE5F9000A1A2EF /* EDMSAEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE983529FE5F9000A1A2EF /* EDMSAEUITestsLaunchTests.swift */; };
+		A8FE984329FE71FE00A1A2EF /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE984229FE71FE00A1A2EF /* UIViewExtension.swift */; };
+		A8FEE77A2A07A5E2002BAA51 /* EDDeliViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FEE7792A07A5E2002BAA51 /* EDDeliViewController.swift */; };
 		A94E7EE1C4DA9A9658A10B60 /* Pods_EDMSAE_EDMSAEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1789A3ED0FD802D7162F75A7 /* Pods_EDMSAE_EDMSAEUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,19 +50,21 @@
 		891FDF121B770D63AF25ACDB /* Pods_EDMSAE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EDMSAE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95626AE9371312CF28E73ADC /* Pods-EDMSAETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EDMSAETests.release.xcconfig"; path = "Target Support Files/Pods-EDMSAETests/Pods-EDMSAETests.release.xcconfig"; sourceTree = "<group>"; };
 		A446F3E32552187F8FE9A3E1 /* Pods-EDMSAE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EDMSAE.release.xcconfig"; path = "Target Support Files/Pods-EDMSAE/Pods-EDMSAE.release.xcconfig"; sourceTree = "<group>"; };
+		A89C6CC92A074C0F00CC0ACA /* EDOrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDOrderDetailViewController.swift; sourceTree = "<group>"; };
+		A89C6CCB2A074CC800CC0ACA /* EDAddressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDAddressCell.swift; sourceTree = "<group>"; };
 		A8FE980F29FE5F8E00A1A2EF /* EDMSAE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EDMSAE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FE981229FE5F8E00A1A2EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8FE981429FE5F8E00A1A2EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A8FE981629FE5F8E00A1A2EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A8FE981929FE5F8E00A1A2EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8FE981B29FE5F9000A1A2EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A8FE981E29FE5F9000A1A2EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8FE982029FE5F9000A1A2EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8FE982529FE5F9000A1A2EF /* EDMSAETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EDMSAETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FE982929FE5F9000A1A2EF /* EDMSAETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDMSAETests.swift; sourceTree = "<group>"; };
 		A8FE982F29FE5F9000A1A2EF /* EDMSAEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EDMSAEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FE983329FE5F9000A1A2EF /* EDMSAEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDMSAEUITests.swift; sourceTree = "<group>"; };
 		A8FE983529FE5F9000A1A2EF /* EDMSAEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDMSAEUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A8FE984229FE71FE00A1A2EF /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		A8FEE7792A07A5E2002BAA51 /* EDDeliViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDDeliViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,9 +133,11 @@
 				A8FE981229FE5F8E00A1A2EF /* AppDelegate.swift */,
 				A8FE981429FE5F8E00A1A2EF /* SceneDelegate.swift */,
 				A8FE981629FE5F8E00A1A2EF /* ViewController.swift */,
-				A8FE981829FE5F8E00A1A2EF /* Main.storyboard */,
+				A89C6CC92A074C0F00CC0ACA /* EDOrderDetailViewController.swift */,
+				A8FEE7792A07A5E2002BAA51 /* EDDeliViewController.swift */,
+				A89C6CCB2A074CC800CC0ACA /* EDAddressCell.swift */,
+				A8FE984229FE71FE00A1A2EF /* UIViewExtension.swift */,
 				A8FE981B29FE5F9000A1A2EF /* Assets.xcassets */,
-				A8FE981D29FE5F9000A1A2EF /* LaunchScreen.storyboard */,
 				A8FE982029FE5F9000A1A2EF /* Info.plist */,
 			);
 			path = EDMSAE;
@@ -164,7 +170,6 @@
 				2548459CE42CCEFFD46813D8 /* Pods-EDMSAETests.debug.xcconfig */,
 				95626AE9371312CF28E73ADC /* Pods-EDMSAETests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -277,9 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8FE981F29FE5F9000A1A2EF /* LaunchScreen.storyboard in Resources */,
 				A8FE981C29FE5F9000A1A2EF /* Assets.xcassets in Resources */,
-				A8FE981A29FE5F8E00A1A2EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,8 +410,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A89C6CCA2A074C0F00CC0ACA /* EDOrderDetailViewController.swift in Sources */,
 				A8FE981729FE5F8E00A1A2EF /* ViewController.swift in Sources */,
+				A8FEE77A2A07A5E2002BAA51 /* EDDeliViewController.swift in Sources */,
 				A8FE981329FE5F8E00A1A2EF /* AppDelegate.swift in Sources */,
+				A89C6CCC2A074CC800CC0ACA /* EDAddressCell.swift in Sources */,
+				A8FE984329FE71FE00A1A2EF /* UIViewExtension.swift in Sources */,
 				A8FE981529FE5F8E00A1A2EF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,25 +451,6 @@
 			targetProxy = A8FE983029FE5F9000A1A2EF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		A8FE981829FE5F8E00A1A2EF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A8FE981929FE5F8E00A1A2EF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A8FE981D29FE5F9000A1A2EF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A8FE981E29FE5F9000A1A2EF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A8FE983729FE5F9000A1A2EF /* Debug */ = {
@@ -592,7 +580,6 @@
 				INFOPLIST_FILE = EDMSAE/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -621,7 +608,6 @@
 				INFOPLIST_FILE = EDMSAE/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

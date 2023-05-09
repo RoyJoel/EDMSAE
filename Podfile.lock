@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (5.6.4)
   - JXSegmentedView (1.3.0)
+  - ReachabilitySwift (5.0.0)
   - SnapKit (5.0.1)
   - SwiftFormat/CLI (0.40.4)
   - SwiftyJSON (5.0.1)
@@ -12,6 +13,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - JXSegmentedView
+  - ReachabilitySwift
   - SnapKit (~> 5.0.0)
   - SwiftFormat/CLI (= 0.40.4)
   - SwiftyJSON
@@ -23,6 +25,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - JXSegmentedView
+    - ReachabilitySwift
     - SnapKit
     - SwiftFormat
     - SwiftyJSON
@@ -42,6 +45,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   JXSegmentedView: fec0d335355b6e019c494fe2e030bde8a36d2df6
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftFormat: cc36377840cffa5d0634782875dccf34dc02ff39
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
@@ -49,6 +53,6 @@ SPEC CHECKSUMS:
   TMComponent: 6b100f06dddd9ece8eee1eaa6ca16bc22ed5f5db
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: ad07c909703bfcac578da2d967bc512557288f78
+PODFILE CHECKSUM: 5ca223c5e6f49eff385d54654201606f056303ae
 
 COCOAPODS: 1.11.3
