@@ -86,7 +86,7 @@ class EDComConfigView: UITableViewCell {
     }
     
     func setupEvent(option: Option) {
-        iconView.image = UIImage(named: option.image)
+        iconView.image = UIImage(data: option.image.toPng())
         introTextfield.text = option.intro
         priceTextField.text = "\(option.price)"
         inventoryTextField.text = "\(option.inventory)"

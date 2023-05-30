@@ -56,6 +56,7 @@
 		A894E6742A249D84001EC075 /* EDComConfigEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6732A249D84001EC075 /* EDComConfigEditingViewController.swift */; };
 		A894E6762A24DB2C001EC075 /* TMDataConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6752A24DB2C001EC075 /* TMDataConvert.swift */; };
 		A894E6782A259C12001EC075 /* EDOptionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6772A259C12001EC075 /* EDOptionRequest.swift */; };
+		A894E67A2A2608BB001EC075 /* ToastNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6792A2608BB001EC075 /* ToastNotification.swift */; };
 		A89C6CCA2A074C0F00CC0ACA /* EDOrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89C6CC92A074C0F00CC0ACA /* EDOrderDetailViewController.swift */; };
 		A89C6CCC2A074CC800CC0ACA /* EDAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89C6CCB2A074CC800CC0ACA /* EDAddressCell.swift */; };
 		A8FE981329FE5F8E00A1A2EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE981229FE5F8E00A1A2EF /* AppDelegate.swift */; };
@@ -144,6 +145,7 @@
 		A894E6732A249D84001EC075 /* EDComConfigEditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDComConfigEditingViewController.swift; sourceTree = "<group>"; };
 		A894E6752A24DB2C001EC075 /* TMDataConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDataConvert.swift; sourceTree = "<group>"; };
 		A894E6772A259C12001EC075 /* EDOptionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDOptionRequest.swift; sourceTree = "<group>"; };
+		A894E6792A2608BB001EC075 /* ToastNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastNotification.swift; sourceTree = "<group>"; };
 		A89C6CC92A074C0F00CC0ACA /* EDOrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDOrderDetailViewController.swift; sourceTree = "<group>"; };
 		A89C6CCB2A074CC800CC0ACA /* EDAddressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDAddressCell.swift; sourceTree = "<group>"; };
 		A8FE980F29FE5F8E00A1A2EF /* EDMSAE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EDMSAE.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -270,6 +272,7 @@
 				A894E6202A243CDF001EC075 /* EDCommodityCell.swift */,
 				A894E6752A24DB2C001EC075 /* TMDataConvert.swift */,
 				A894E61E2A243CBA001EC075 /* EDCommodityEditingViewController.swift */,
+				A894E6792A2608BB001EC075 /* ToastNotification.swift */,
 				A894E66E2A248AFC001EC075 /* EDComConfigTableView.swift */,
 				A894E61C2A243C97001EC075 /* CommodityManagementViewController.swift */,
 				A894E61A2A243C60001EC075 /* TabViewController.swift */,
@@ -571,6 +574,7 @@
 				A894E66D2A245674001EC075 /* StringExtension.swift in Sources */,
 				A894E63D2A243E31001EC075 /* EDComBillingCell.swift in Sources */,
 				A8FE981729FE5F8E00A1A2EF /* BillManagementViewController.swift in Sources */,
+				A894E67A2A2608BB001EC075 /* ToastNotification.swift in Sources */,
 				A894E6532A243F52001EC075 /* TMSignUpViewController.swift in Sources */,
 				A894E66B2A24404E001EC075 /* TMTextFieldConfig.swift in Sources */,
 				A894E6452A243E74001EC075 /* Sex.swift in Sources */,

@@ -188,42 +188,10 @@
             filePath = "EDMSAE/EDCommodityEditingViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D5430293-6F98-46AD-93C8-DECD2500738B - 3fbca02490fa61f2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #8 (Swift.Int) -&gt; () in EDMSAE.EDCommodityEditingViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "EDMSAE"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jasonzhang/EDMSAE/EDMSAE/EDCommodityEditingViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "118"
-                  endingLineNumber = "118"
-                  offsetFromSymbolStart = "58">
-               </Location>
-               <Location
-                  uuid = "D5430293-6F98-46AD-93C8-DECD2500738B - 3fbca02490fa61f2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #8 (Swift.Int) -&gt; () in EDMSAE.EDCommodityEditingViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "EDMSAE"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jasonzhang/EDMSAE/EDMSAE/EDCommodityEditingViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "118"
-                  endingLineNumber = "118"
-                  offsetFromSymbolStart = "64">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -236,42 +204,10 @@
             filePath = "EDMSAE/EDCommodityEditingViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "069B6BA6-E632-4637-AC54-CFCF6C9A027F - 1a4ac0572b3fc3fd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EDMSAE.EDCommodityEditingViewController.tableView(_: __C.UITableView, numberOfRowsInSection: Swift.Int) -&gt; Swift.Int"
-                  moduleName = "EDMSAE"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jasonzhang/EDMSAE/EDMSAE/EDCommodityEditingViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "131"
-                  endingLineNumber = "131"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  uuid = "069B6BA6-E632-4637-AC54-CFCF6C9A027F - 1a4ac0572b3fc3fd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EDMSAE.EDCommodityEditingViewController.tableView(_: __C.UITableView, numberOfRowsInSection: Swift.Int) -&gt; Swift.Int"
-                  moduleName = "EDMSAE"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jasonzhang/EDMSAE/EDMSAE/EDCommodityEditingViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "131"
-                  endingLineNumber = "131"
-                  offsetFromSymbolStart = "40">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -284,13 +220,13 @@
             filePath = "EDMSAE/EDCommodityEditingViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "6B085865-5FF7-485A-9BA5-E98674E1F275 - d22636b5229bc479"
+                  uuid = "6B085865-5FF7-485A-9BA5-E98674E1F275 - d22636b5229bcf80"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -300,12 +236,12 @@
                   urlString = "file:///Users/jasonzhang/EDMSAE/EDMSAE/EDCommodityEditingViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "135"
-                  endingLineNumber = "135"
-                  offsetFromSymbolStart = "128">
+                  startingLineNumber = "192"
+                  endingLineNumber = "192"
+                  offsetFromSymbolStart = "170">
                </Location>
                <Location
-                  uuid = "6B085865-5FF7-485A-9BA5-E98674E1F275 - d22636b5229bc479"
+                  uuid = "6B085865-5FF7-485A-9BA5-E98674E1F275 - d22636b5229bcfa1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -315,23 +251,8 @@
                   urlString = "file:///Users/jasonzhang/EDMSAE/EDMSAE/EDCommodityEditingViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "135"
-                  endingLineNumber = "135"
-                  offsetFromSymbolStart = "160">
-               </Location>
-               <Location
-                  uuid = "6B085865-5FF7-485A-9BA5-E98674E1F275 - d22636b5229bc479"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EDMSAE.EDCommodityEditingViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
-                  moduleName = "EDMSAE"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jasonzhang/EDMSAE/EDMSAE/EDCommodityEditingViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "135"
-                  endingLineNumber = "135"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
                   offsetFromSymbolStart = "146">
                </Location>
             </Locations>
@@ -340,191 +261,62 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EA59C8E3-FA63-4638-8D4D-616670A4128F"
+            uuid = "D9DC445F-A4C8-4078-A43C-5DB7732959B9"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EDMSAE/EDComConfigEditingViewController.swift"
+            filePath = "EDMSAE/EDCommodityCofigTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
-            landmarkName = "changeIcon()"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "tableView(_:trailingSwipeActionsConfigurationForRowAt:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "EA59C8E3-FA63-4638-8D4D-616670A4128F - 172272a505a4f2f9"
+                  uuid = "D9DC445F-A4C8-4078-A43C-5DB7732959B9 - 2a4add713e72941a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "EDMSAE.EDComConfigEditingViewController.changeIcon() -&gt; ()"
+                  symbolName = "closure #1 (Swift.Array&lt;EDMSAE.Option&gt;) -&gt; () in closure #1 (__C.UIContextualAction, __C.UIView, (Swift.Bool) -&gt; ()) -&gt; () in EDMSAE.EDCommodityCofigTableViewController.tableView(_: __C.UITableView, trailingSwipeActionsConfigurationForRowAt: Foundation.IndexPath) -&gt; Swift.Optional&lt;__C.UISwipeActionsConfiguration&gt;"
                   moduleName = "EDMSAE"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jasonzhang/EDMSAE/EDMSAE/EDComConfigEditingViewController.swift"
+                  urlString = "file:///Users/jasonzhang/EDMSAE/EDMSAE/EDCommodityCofigTableViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "127"
-                  endingLineNumber = "127"
-                  offsetFromSymbolStart = "91">
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "45">
                </Location>
                <Location
-                  uuid = "EA59C8E3-FA63-4638-8D4D-616670A4128F - 172272a505a4f2f9"
+                  uuid = "D9DC445F-A4C8-4078-A43C-5DB7732959B9 - 2a4add713e7294fb"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "EDMSAE.EDComConfigEditingViewController.changeIcon() -&gt; ()"
+                  symbolName = "closure #1 (Swift.Array&lt;EDMSAE.Option&gt;) -&gt; () in closure #1 (__C.UIContextualAction, __C.UIView, (Swift.Bool) -&gt; ()) -&gt; () in EDMSAE.EDCommodityCofigTableViewController.tableView(_: __C.UITableView, trailingSwipeActionsConfigurationForRowAt: Foundation.IndexPath) -&gt; Swift.Optional&lt;__C.UISwipeActionsConfiguration&gt;"
                   moduleName = "EDMSAE"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jasonzhang/EDMSAE/EDMSAE/EDComConfigEditingViewController.swift"
+                  urlString = "file:///Users/jasonzhang/EDMSAE/EDMSAE/EDCommodityCofigTableViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "127"
-                  endingLineNumber = "127"
-                  offsetFromSymbolStart = "34">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4FFEAB8C-A6E6-41E4-A89E-5180D48FF02C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EDMSAE/EDComConfigEditingViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "setupEvent(option:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "4FFEAB8C-A6E6-41E4-A89E-5180D48FF02C - bba822f1224ef28c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EDMSAE.EDComConfigEditingViewController.setupEvent(option: EDMSAE.Option) -&gt; ()"
-                  moduleName = "EDMSAE"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jasonzhang/EDMSAE/EDMSAE/EDComConfigEditingViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "110"
-                  endingLineNumber = "110"
-                  offsetFromSymbolStart = "250">
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "92">
                </Location>
                <Location
-                  uuid = "4FFEAB8C-A6E6-41E4-A89E-5180D48FF02C - bba822f1224ef28c"
+                  uuid = "D9DC445F-A4C8-4078-A43C-5DB7732959B9 - 2a4add713e7294fb"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "EDMSAE.EDComConfigEditingViewController.setupEvent(option: EDMSAE.Option) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Array&lt;EDMSAE.Option&gt;) -&gt; () in closure #1 (__C.UIContextualAction, __C.UIView, (Swift.Bool) -&gt; ()) -&gt; () in EDMSAE.EDCommodityCofigTableViewController.tableView(_: __C.UITableView, trailingSwipeActionsConfigurationForRowAt: Foundation.IndexPath) -&gt; Swift.Optional&lt;__C.UISwipeActionsConfiguration&gt;"
                   moduleName = "EDMSAE"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jasonzhang/EDMSAE/EDMSAE/EDComConfigEditingViewController.swift"
+                  urlString = "file:///Users/jasonzhang/EDMSAE/EDMSAE/EDCommodityCofigTableViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "110"
-                  endingLineNumber = "110"
-                  offsetFromSymbolStart = "62">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9C69418C-808A-42E8-BB7C-60EDEF99B111"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EDMSAE/EDComConfigEditingViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "9C69418C-808A-42E8-BB7C-60EDEF99B111 - c3e191a209949040"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EDMSAE.EDComConfigEditingViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "EDMSAE"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jasonzhang/EDMSAE/EDMSAE/EDComConfigEditingViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "102"
-                  endingLineNumber = "102"
-                  offsetFromSymbolStart = "4324">
-               </Location>
-               <Location
-                  uuid = "9C69418C-808A-42E8-BB7C-60EDEF99B111 - c3e191a209949063"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EDMSAE.EDComConfigEditingViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "EDMSAE"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jasonzhang/EDMSAE/EDMSAE/EDComConfigEditingViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "103"
-                  endingLineNumber = "103"
-                  offsetFromSymbolStart = "4312">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3E7F625B-CF7A-4131-BD3E-A91E6AA8172C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EDMSAE/EDComConfigEditingViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "changeIcon()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "3E7F625B-CF7A-4131-BD3E-A91E6AA8172C - 172272a505a4f2d8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EDMSAE.EDComConfigEditingViewController.changeIcon() -&gt; ()"
-                  moduleName = "EDMSAE"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jasonzhang/EDMSAE/EDMSAE/EDComConfigEditingViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "128"
-                  endingLineNumber = "128"
-                  offsetFromSymbolStart = "233">
-               </Location>
-               <Location
-                  uuid = "3E7F625B-CF7A-4131-BD3E-A91E6AA8172C - 172272a505a4f2d8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EDMSAE.EDComConfigEditingViewController.changeIcon() -&gt; ()"
-                  moduleName = "EDMSAE"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jasonzhang/EDMSAE/EDMSAE/EDComConfigEditingViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "128"
-                  endingLineNumber = "128"
-                  offsetFromSymbolStart = "91">
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "45">
                </Location>
             </Locations>
          </BreakpointContent>

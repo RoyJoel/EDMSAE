@@ -76,7 +76,11 @@ class EDCommodityCell: UITableViewCell {
     }
 
     func setupEvent(com: Commodity) {
-        comIconView.image = UIImage(named: com.options[0].image)
+        if com.options.count == 0 {
+            comIconView.image = UIImage(systemName: "camera")
+        }else {
+            comIconView.image = UIImage(data: com.options[0].image.toPng())
+        }
         nameView.text = com.name
         priceLabel.text = "价格：¥\(TMDataConvert.getPriceRange(with: com.options).0) - \(TMDataConvert.getPriceRange(with: com.options).1)"
         inventoryLabel.text = "库存 \(TMDataConvert.getTotalInventory(with: com.options))"

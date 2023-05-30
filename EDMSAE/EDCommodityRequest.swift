@@ -24,4 +24,21 @@ class EDCommodityRequest {
             completionHandler(json.arrayValue.compactMap { Commodity(json: $0) })
         }
     }
+    
+    static func add(commodity: Commodity, completionHandler: @escaping ([Commodity]) -> Void) {
+        EDNetWork.post("/commodity/add", dataParameters: commodity) { json in
+            guard let json = json else {
+                return
+            }
+            completionHandler(json.arrayValue.compactMap { Commodity(json: $0) })
+        }
+    }
+    static func update(commodity: Commodity, completionHandler: @escaping (Commodity) -> Void) {
+        EDNetWork.post("/commodity/update", dataParameters: commodity) { json in
+            guard let json = json else {
+                return
+            }
+            completionHandler( Commodity(json: json) )
+        }
+    }
 }

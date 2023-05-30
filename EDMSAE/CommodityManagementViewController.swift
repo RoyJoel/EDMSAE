@@ -155,6 +155,19 @@ class CommodityManagementViewController: EDViewController {
         self.commoditiesToConfirmTableView.dataSource = self.commoditiesToConfirmDS
         self.commoditiesToConfirmTableView.register(EDUserOrderCell.self, forCellReuseIdentifier: "commoditiesToConfirm")
         
+        NotificationCenter.default.addObserver(self, selector: #selector(refreshCommoditiesData), name: Notification.Name(ToastNotification.refreshCommoditiesData.notificationName.rawValue), object: nil)
+        refreshData()
+    }
+    
+    @objc func addConfig() {
+        let vc = EDCommodityEditingViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func refreshCommoditiesData() {
+        refreshData()
+    }
+    func refreshData() {
         allOrderTableView.tab_startAnimation {
             EDCommodityRequest.getAll { commodities in
                 self.allOrdersDS.commodities = commodities
@@ -171,11 +184,6 @@ class CommodityManagementViewController: EDViewController {
                 self.allOrderTableView.tab_endAnimation()
             }
         }
-    }
-    
-    @objc func addConfig() {
-        let vc = EDCommodityEditingViewController()
-        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

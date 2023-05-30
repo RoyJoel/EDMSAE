@@ -62,3 +62,8 @@ struct Option: Codable, Equatable {
             lhs.intro == rhs.intro && lhs.price == rhs.price && lhs.inventory == rhs.inventory
     }
 }
+
+struct OptionRequest: Codable {
+    var comId: Int
+    var option: Option
+}

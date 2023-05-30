@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class EDComConfigTableView: UIView {
-    private var options: [Option] = []
+    var options: [Option] = []
     lazy var label: UILabel = {
         let label = UILabel()
         return label
@@ -30,21 +30,19 @@ class EDComConfigTableView: UIView {
                 make.bottom.equalToSuperview().offset(-12)
                 make.width.equalTo(imageView.snp.height)
             }
-            imageView.image = UIImage(named: options[0].image)
+            imageView.image = UIImage(data: options[0].image.toPng())
             imageView.setCorner(radii: 15)
-            var lastView = imageView
             for bill in 1 ..< min(2, options.count) {
                 let imageView = UIImageView()
                 addSubview(imageView)
                 imageView.snp.makeConstraints { make in
-                    make.left.equalTo(lastView.snp.right).offset(6)
+                    make.left.equalTo(imageView.snp.right).offset(6)
                     make.top.equalToSuperview().offset(12)
                     make.bottom.equalToSuperview().offset(-12)
                     make.width.equalTo(imageView.snp.height)
                 }
-                imageView.image = UIImage(named: options[bill].image)
+                imageView.image = UIImage(data: options[bill].image.toPng())
                 imageView.setCorner(radii: 15)
-                lastView = imageView
             }
             
             let countLabel = UILabel()
@@ -74,6 +72,12 @@ class EDComConfigTableView: UIView {
         let vc = EDCommodityCofigTableViewController()
         vc.options = options
         if let parentVC = getParentViewController() {
+            vc.completionHdandler = { options in
+                for subview in self.subviews {
+                    subview.removeFromSuperview()
+                }
+                self.setup(with: options)
+            }
             parentVC.navigationController?.pushViewController(vc, animated: true)
         }
     }

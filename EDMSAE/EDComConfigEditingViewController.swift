@@ -10,6 +10,7 @@ import UIKit
 
 class EDComConfigEditingViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     var option = Option()
+    var completionHandler: ((Option) -> Void)?
     lazy var iconView: UIImageView = {
         let imageView = UIImageView()
         return imageView
@@ -39,6 +40,11 @@ class EDComConfigEditingViewController: UIViewController, UIImagePickerControlle
         let textField = EDTextField()
         return textField
     }()
+    lazy var confirmBtn: UIButton = {
+        let btn = UIButton()
+        return btn
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "编辑类目信息"
@@ -49,6 +55,7 @@ class EDComConfigEditingViewController: UIViewController, UIImagePickerControlle
         view.addSubview(inventoryLabel)
         view.addSubview(priceTextField)
         view.addSubview(inventoryTextField)
+        view.addSubview(confirmBtn)
         
         iconView.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
@@ -86,6 +93,12 @@ class EDComConfigEditingViewController: UIViewController, UIImagePickerControlle
             make.right.equalToSuperview().offset(-24)
             make.height.equalTo(38)
         }
+        confirmBtn.snp.makeConstraints { make in
+            make.top.equalTo(inventoryTextField.snp.bottom).offset(44)
+            make.centerX.equalToSuperview()
+            make.width.equalTo(108)
+            make.height.equalTo(44)
+        }
         
         
         let introConfig = EDTextFieldConfig(placeholderText: "商品类目")
@@ -103,11 +116,15 @@ class EDComConfigEditingViewController: UIViewController, UIImagePickerControlle
         iconView.image = UIImage(systemName: "camera")
         iconView.isUserInteractionEnabled = true
         iconView.addTapGesture(self, #selector(changeIcon))
+        confirmBtn.setTitle("保存", for: .normal)
+        confirmBtn.setTitleColor(.black, for: .normal)
+        confirmBtn.backgroundColor = UIColor(named: "TennisBlur")
+        confirmBtn.addTarget(self, action: #selector(confirm), for: .touchDown)
         setupEvent(option: option)
     }
     
     func setupEvent(option: Option) {
-        iconView.image = UIImage(named: option.image)
+        iconView.image = UIImage(data: option.image.toPng())
         introTextfield.textField.text = option.intro
         priceTextField.textField.text = "\(option.price)"
         inventoryTextField.textField.text = "\(option.inventory)"
@@ -126,5 +143,10 @@ class EDComConfigEditingViewController: UIViewController, UIImagePickerControlle
     @objc func changeIcon() {
         imagePicker.sourceType = .photoLibrary
         navigationController?.present(imagePicker, animated: true)
+    }
+    @objc func confirm() {
+        let option = Option(id: option.id, image: (iconView.image?.pngData() ?? Data()).base64EncodedString(), intro: introTextfield.textField.text ?? "", price: Double(priceTextField.textField.text ?? "0") ?? 0, inventory: Int(inventoryTextField.textField.text ?? "0") ?? 0)
+        (completionHandler ?? {_ in})(option)
+        dismiss(animated: true)
     }
 }

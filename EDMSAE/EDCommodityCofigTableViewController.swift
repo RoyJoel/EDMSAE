@@ -10,7 +10,7 @@ import UIKit
 
 class EDCommodityCofigTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var options: [Option] = []
-    
+    var completionHdandler: (([Option]) -> Void)?
     lazy var orderBackgroundView: UIView = {
         let view = UIView()
         return view
@@ -105,6 +105,7 @@ class EDCommodityCofigTableViewController: UIViewController, UITableViewDataSour
             EDOptionRequest.delete(option.id) { options in
                 self.options = options
                 self.billTableView.reloadData()
+                (self.completionHdandler ?? { _ in })(options)
             }
         }
         deleteAction.backgroundColor = .red
@@ -130,10 +131,22 @@ class EDCommodityCofigTableViewController: UIViewController, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = EDComConfigEditingViewController()
         vc.option = options[indexPath.row]
+        vc.completionHandler = { option in
+                self.options[indexPath.row] = option
+                self.billTableView.reloadData()
+            (self.completionHdandler ?? { _ in })(self.options)
+            
+        }
         present(UINavigationController(rootViewController: vc), animated: true)
     }
     @objc func addConfig() {
         let vc = EDComConfigEditingViewController()
+        vc.completionHandler = { option in
+            self.options.append(option)
+                self.billTableView.reloadData()
+            (self.completionHdandler ?? { _ in })(self.options)
+            
+        }
         present(UINavigationController(rootViewController: vc), animated: true)
     }
 }

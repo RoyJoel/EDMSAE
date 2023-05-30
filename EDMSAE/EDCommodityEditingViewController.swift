@@ -12,6 +12,7 @@ import TMComponent
 class EDCommodityEditingViewController: UIViewController, UITableViewDataSource {
     var configItems = ComCag.allCases
     var com = Commodity()
+    var completionHandler: ((Commodity) -> Void)?
     
     lazy var nameLabel: UILabel = {
         let label = UILabel()
@@ -48,6 +49,16 @@ class EDCommodityEditingViewController: UIViewController, UITableViewDataSource 
         return view
     }()
     
+    lazy var leftBtn: UIButton = {
+        let btn = UIButton()
+        return btn
+    }()
+    
+    lazy var rightBtn: UIButton = {
+        let btn = UIButton()
+        return btn
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: "BackgroundGray")
@@ -60,6 +71,8 @@ class EDCommodityEditingViewController: UIViewController, UITableViewDataSource 
         view.addSubview(cagSelectionView)
         view.addSubview(optionLabel)
         view.addSubview(configSelectionView)
+        view.addSubview(leftBtn)
+        view.addSubview(rightBtn)
         view.bringSubviewToFront(configSelectionView)
         
         nameLabel.snp.makeConstraints { make in
@@ -105,6 +118,21 @@ class EDCommodityEditingViewController: UIViewController, UITableViewDataSource 
             make.right.equalToSuperview().offset(-12)
             make.height.equalTo(126)
         }
+        
+        leftBtn.snp.makeConstraints { make in
+            make.left.equalToSuperview().offset(68)
+            make.width.equalTo(108)
+            make.top.equalTo(configSelectionView.snp.bottom).offset(44)
+            make.height.equalTo(44)
+        }
+        
+        rightBtn.snp.makeConstraints { make in
+            make.right.equalToSuperview().offset(-68)
+            make.width.equalTo(108)
+            make.top.equalTo(configSelectionView.snp.bottom).offset(44)
+            make.height.equalTo(44)
+        }
+        
         nameLabel.text = "商品标题"
         introLabel.text = "商品介绍"
         cagLabel.text = "商品类别"
@@ -125,6 +153,35 @@ class EDCommodityEditingViewController: UIViewController, UITableViewDataSource 
         let selectedConfig = configItems.remove(at: com.cag.rawValue)
         configItems.insert(selectedConfig, at: 0)
         configSelectionView.setup(with: com.options)
+        if com == Commodity() {
+            leftBtn.setTitle("放入仓库", for: .normal)
+            rightBtn.setTitle("一键上架", for: .normal)
+            leftBtn.addTarget(self, action: #selector(addCommodityToWarehouse), for: .touchDown)
+            rightBtn.addTarget(self, action: #selector(startSellingCommodity), for: .touchDown)
+        }else if com.state == .ToArrived {
+            leftBtn.setTitle("删除商品", for: .normal)
+            rightBtn.setTitle("一键上架", for: .normal)
+            leftBtn.addTarget(self, action: #selector(deleteCommodity), for: .touchDown)
+            rightBtn.addTarget(self, action: #selector(sellCommodity), for: .touchDown)
+        }else if com.state == .Banned {
+            leftBtn.setTitle("删除商品", for: .normal)
+            rightBtn.setTitle("重新上架", for: .normal)
+            leftBtn.addTarget(self, action: #selector(deleteCommodity), for: .touchDown)
+            rightBtn.addTarget(self, action: #selector(sellCommodity), for: .touchDown)
+        }else if com.state == .selling {
+            leftBtn.setTitle("放回仓库", for: .normal)
+            rightBtn.setTitle("一键下架", for: .normal)
+            leftBtn.addTarget(self, action: #selector(putCommodityToWarehouse), for: .touchDown)
+            rightBtn.addTarget(self, action: #selector(offCommodity), for: .touchDown)
+        }
+        leftBtn.backgroundColor = UIColor(named: "TennisBlur")
+        rightBtn.backgroundColor = UIColor(named: "TennisBlur")
+        leftBtn.setTitleColor(.black, for: .normal)
+        rightBtn.setTitleColor(.black, for: .normal)
+    }
+    
+    func getCommodityInfo() -> Commodity {
+        return Commodity(id: com.id, options: configSelectionView.options, name: nameTextField.textField.text ?? "", intro: introTextView.text ?? "", orders: com.orders, cag: configItems[0], state: com.state)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -138,4 +195,63 @@ class EDCommodityEditingViewController: UIViewController, UITableViewDataSource 
         return cell
     }
      
+    @objc func addCommodityToWarehouse() {
+        var newCommodity = getCommodityInfo()
+        newCommodity.state = .ToArrived
+        EDCommodityRequest.add(commodity: newCommodity) { _ in
+            self.navigationController?.popViewController(animated: true)
+            
+            NotificationCenter.default.post(name: Notification.Name(ToastNotification.refreshCommoditiesData.notificationName.rawValue), object: nil)
+        }
+    }
+    
+    @objc func putCommodityToWarehouse() {
+        var commodity = getCommodityInfo()
+        commodity.state = .ToArrived
+        EDCommodityRequest.update(commodity: commodity) { _ in
+            self.navigationController?.popViewController(animated: true)
+            
+            NotificationCenter.default.post(name: Notification.Name(ToastNotification.refreshCommoditiesData.notificationName.rawValue), object: nil)
+        }
+    }
+    
+    @objc func offCommodity() {
+        var commodity = getCommodityInfo()
+        commodity.state = .Banned
+        EDCommodityRequest.update(commodity: commodity) { _ in
+            self.navigationController?.popViewController(animated: true)
+            
+            NotificationCenter.default.post(name: Notification.Name(ToastNotification.refreshCommoditiesData.notificationName.rawValue), object: nil)
+            
+        }
+    }
+    
+    @objc func sellCommodity() {
+        var commodity = getCommodityInfo()
+        commodity.state = .selling
+        EDCommodityRequest.update(commodity: commodity) { _ in
+            self.navigationController?.popViewController(animated: true)
+            
+            NotificationCenter.default.post(name: Notification.Name(ToastNotification.refreshCommoditiesData.notificationName.rawValue), object: nil)
+            
+        }
+    }
+    
+    @objc func deleteCommodity() {
+        let commodity = getCommodityInfo()
+        EDCommodityRequest.delete(commodity.id) { _ in
+            self.navigationController?.popViewController(animated: true)
+            
+            NotificationCenter.default.post(name: Notification.Name(ToastNotification.refreshCommoditiesData.notificationName.rawValue), object: nil)
+        }
+    }
+    @objc func startSellingCommodity() {
+        var newCommodity = getCommodityInfo()
+        newCommodity.state = .selling
+        EDCommodityRequest.add(commodity: newCommodity) { _ in
+            self.navigationController?.popViewController(animated: true)
+            
+            NotificationCenter.default.post(name: Notification.Name(ToastNotification.refreshCommoditiesData.notificationName.rawValue), object: nil)
+        }
+    }
 }
