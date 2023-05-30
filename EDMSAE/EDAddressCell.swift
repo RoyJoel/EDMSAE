@@ -153,7 +153,7 @@ class EDAddressCell: UITableViewCell {
     @objc func enterEditingView() {
         if let parentVC = getParentViewController() {
             let vc = EDAddressEditingViewController()
-            vc.setupEvent(address: address1)
+            vc.setupEvent(address: address)
             vc.saveCompletionHandler = { address in
                 self.setupEvent(address: address)
             }

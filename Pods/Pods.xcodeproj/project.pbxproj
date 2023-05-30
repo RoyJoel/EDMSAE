@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = SwiftFormat;
+			productName = SwiftFormat;
 		};
 /* End PBXAggregateTarget section */
 
@@ -660,7 +661,7 @@
 		9A63888508C3A4DFC8071177CAA92DF4 /* Pods-EDMSAETests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EDMSAETests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9BA12D850795E9178C1AD6AD0CA9977B /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
 		9CDFC32F0455A77505B0BE71D1611E71 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A09585DDEE8F0574048885CBAB165EEC /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		A0BB79D1FDFC353FD7452DF407111651 /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Source/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
 		A30CE6A41B2F4397EEC0F500B171700A /* TABAnimatedProduction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedProduction.h; path = TABAnimatedDemo/TABAnimated/Product/TABAnimatedProduction.h; sourceTree = "<group>"; };
@@ -902,7 +903,6 @@
 				9CDFC32F0455A77505B0BE71D1611E71 /* SwiftyJSON.swift */,
 				5AE8E4456BE77B8CB3BA93331941B45D /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -999,7 +999,6 @@
 				EB9ECC57BCE82C72B31FBE1397CA0CAB /* JXSegmentedViewTool.swift */,
 				FE4A72588BDCC6E3EA0CCAF9F0D0D206 /* Support Files */,
 			);
-			name = JXSegmentedView;
 			path = JXSegmentedView;
 			sourceTree = "<group>";
 		};
@@ -1110,7 +1109,6 @@
 				C5431A8A97C85DA5533E37ED965C66C1 /* Validation.swift */,
 				B0B91473F6C640F61056DB8633E4AF8B /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -1160,7 +1158,6 @@
 			children = (
 				8B958EABE1170DDF529E376734F064A0 /* Support Files */,
 			);
-			name = SwiftFormat;
 			path = SwiftFormat;
 			sourceTree = "<group>";
 		};
@@ -1313,7 +1310,6 @@
 				22448A3FE64B3BD99682FD9723A20CA7 /* UIView+TABExtension.m */,
 				A24D0645C40A5CD088B05921C66513F1 /* Support Files */,
 			);
-			name = TABAnimated;
 			path = TABAnimated;
 			sourceTree = "<group>";
 		};
@@ -1361,7 +1357,6 @@
 				5E94F515E996F13486A5D3D7EA88A2A3 /* UIViewExtension.swift */,
 				F9DD38CF75FB7674044B671992CA9D50 /* Support Files */,
 			);
-			name = TMComponent;
 			path = TMComponent;
 			sourceTree = "<group>";
 		};
@@ -1390,7 +1385,6 @@
 				A92EA0A5C09A050AD54DE0EECF4D97B6 /* Reachability.swift */,
 				9058A4EF09A99D1323ABC78C56B0217D /* Support Files */,
 			);
-			name = ReachabilitySwift;
 			path = ReachabilitySwift;
 			sourceTree = "<group>";
 		};
@@ -1435,7 +1429,6 @@
 				9882A094F710B631B12539FC5528B630 /* UILayoutSupport+Extensions.swift */,
 				76F3796754A06E706B0C632815367C3A /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -1475,7 +1468,6 @@
 				BDFFC5167DB5361D4492FA43E380DEC0 /* Toast.swift */,
 				1D0A6C5D2ADF51CD96EC9791E2D4349F /* Support Files */,
 			);
-			name = "Toast-Swift";
 			path = "Toast-Swift";
 			sourceTree = "<group>";
 		};

@@ -9,11 +9,58 @@
 /* Begin PBXBuildFile section */
 		68D417C1195CE58ED14078E8 /* Pods_EDMSAETests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133D8F0F276568806567AB9E /* Pods_EDMSAETests.framework */; };
 		718BD1A770490FE23745281E /* Pods_EDMSAE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891FDF121B770D63AF25ACDB /* Pods_EDMSAE.framework */; };
+		A894E61B2A243C60001EC075 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E61A2A243C60001EC075 /* TabViewController.swift */; };
+		A894E61D2A243C97001EC075 /* CommodityManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E61C2A243C97001EC075 /* CommodityManagementViewController.swift */; };
+		A894E61F2A243CBA001EC075 /* EDCommodityEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E61E2A243CBA001EC075 /* EDCommodityEditingViewController.swift */; };
+		A894E6212A243CDF001EC075 /* EDCommodityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6202A243CDF001EC075 /* EDCommodityCell.swift */; };
+		A894E6232A243CFA001EC075 /* EDConfigSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6222A243CFA001EC075 /* EDConfigSelectionView.swift */; };
+		A894E6252A243D18001EC075 /* ExpressManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6242A243D18001EC075 /* ExpressManagementViewController.swift */; };
+		A894E6272A243D43001EC075 /* EDUserOrderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6262A243D43001EC075 /* EDUserOrderTableView.swift */; };
+		A894E6292A243D67001EC075 /* EDUserOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6282A243D67001EC075 /* EDUserOrderCell.swift */; };
+		A894E62B2A243D7A001EC075 /* CommodityState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E62A2A243D7A001EC075 /* CommodityState.swift */; };
+		A894E62D2A243D8A001EC075 /* OrderState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E62C2A243D8A001EC075 /* OrderState.swift */; };
+		A894E62F2A243DA7001EC075 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E62E2A243DA7001EC075 /* Order.swift */; };
+		A894E6312A243DBB001EC075 /* EDBillingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6302A243DBB001EC075 /* EDBillingView.swift */; };
+		A894E6332A243DD1001EC075 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6322A243DD1001EC075 /* Address.swift */; };
+		A894E6352A243DE8001EC075 /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6342A243DE8001EC075 /* District.swift */; };
+		A894E6372A243DF5001EC075 /* AddressLavel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6362A243DF5001EC075 /* AddressLavel.swift */; };
+		A894E6392A243E0C001EC075 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6382A243E0C001EC075 /* Bill.swift */; };
+		A894E63B2A243E18001EC075 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E63A2A243E18001EC075 /* Payment.swift */; };
+		A894E63D2A243E31001EC075 /* EDComBillingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E63C2A243E31001EC075 /* EDComBillingCell.swift */; };
+		A894E63F2A243E43001EC075 /* Commodity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E63E2A243E43001EC075 /* Commodity.swift */; };
+		A894E6412A243E56001EC075 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6402A243E56001EC075 /* Option.swift */; };
+		A894E6432A243E67001EC075 /* ComCag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6422A243E67001EC075 /* ComCag.swift */; };
+		A894E6452A243E74001EC075 /* Sex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6442A243E74001EC075 /* Sex.swift */; };
+		A894E6472A243E92001EC075 /* EDBillTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6462A243E92001EC075 /* EDBillTableViewController.swift */; };
+		A894E6492A243EA6001EC075 /* EDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6482A243EA5001EC075 /* EDViewController.swift */; };
+		A894E64B2A243EBF001EC075 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E64A2A243EBF001EC075 /* User.swift */; };
+		A894E64D2A243EE5001EC075 /* EDUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E64C2A243EE5001EC075 /* EDUser.swift */; };
+		A894E64F2A243EFD001EC075 /* EDNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E64E2A243EFD001EC075 /* EDNetWork.swift */; };
+		A894E6512A243F2D001EC075 /* EDSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6502A243F2D001EC075 /* EDSignInViewController.swift */; };
+		A894E6532A243F52001EC075 /* TMSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6522A243F52001EC075 /* TMSignUpViewController.swift */; };
+		A894E6552A243F5F001EC075 /* TMResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6542A243F5F001EC075 /* TMResetPasswordViewController.swift */; };
+		A894E6572A243F8E001EC075 /* EDCommodityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6562A243F8E001EC075 /* EDCommodityRequest.swift */; };
+		A894E6592A243FA0001EC075 /* EDOrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6582A243FA0001EC075 /* EDOrderRequest.swift */; };
+		A894E65B2A243FAF001EC075 /* TMSys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E65A2A243FAF001EC075 /* TMSys.swift */; };
+		A894E65D2A243FBD001EC075 /* TMPlayerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E65C2A243FBD001EC075 /* TMPlayerRequest.swift */; };
+		A894E65F2A243FD1001EC075 /* TMUDKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E65E2A243FD1001EC075 /* TMUDKeys.swift */; };
+		A894E6612A243FE5001EC075 /* TMServerViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6602A243FE5001EC075 /* TMServerViewConfig.swift */; };
+		A894E6632A244004001EC075 /* TMServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6622A244004001EC075 /* TMServerView.swift */; };
+		A894E6652A244017001EC075 /* TMSIgnInBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6642A244017001EC075 /* TMSIgnInBtn.swift */; };
+		A894E6672A244028001EC075 /* TMSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6662A244028001EC075 /* TMSelectionView.swift */; };
+		A894E6692A24403F001EC075 /* TMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6682A24403F001EC075 /* TMTextField.swift */; };
+		A894E66B2A24404E001EC075 /* TMTextFieldConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E66A2A24404E001EC075 /* TMTextFieldConfig.swift */; };
+		A894E66D2A245674001EC075 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E66C2A245674001EC075 /* StringExtension.swift */; };
+		A894E66F2A248AFC001EC075 /* EDComConfigTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E66E2A248AFC001EC075 /* EDComConfigTableView.swift */; };
+		A894E6712A248C3A001EC075 /* EDCommodityCofigTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6702A248C3A001EC075 /* EDCommodityCofigTableViewController.swift */; };
+		A894E6742A249D84001EC075 /* EDComConfigEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6732A249D84001EC075 /* EDComConfigEditingViewController.swift */; };
+		A894E6762A24DB2C001EC075 /* TMDataConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6752A24DB2C001EC075 /* TMDataConvert.swift */; };
+		A894E6782A259C12001EC075 /* EDOptionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A894E6772A259C12001EC075 /* EDOptionRequest.swift */; };
 		A89C6CCA2A074C0F00CC0ACA /* EDOrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89C6CC92A074C0F00CC0ACA /* EDOrderDetailViewController.swift */; };
 		A89C6CCC2A074CC800CC0ACA /* EDAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89C6CCB2A074CC800CC0ACA /* EDAddressCell.swift */; };
 		A8FE981329FE5F8E00A1A2EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE981229FE5F8E00A1A2EF /* AppDelegate.swift */; };
 		A8FE981529FE5F8E00A1A2EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE981429FE5F8E00A1A2EF /* SceneDelegate.swift */; };
-		A8FE981729FE5F8E00A1A2EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE981629FE5F8E00A1A2EF /* ViewController.swift */; };
+		A8FE981729FE5F8E00A1A2EF /* BillManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE981629FE5F8E00A1A2EF /* BillManagementViewController.swift */; };
 		A8FE981C29FE5F9000A1A2EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8FE981B29FE5F9000A1A2EF /* Assets.xcassets */; };
 		A8FE982A29FE5F9000A1A2EF /* EDMSAETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE982929FE5F9000A1A2EF /* EDMSAETests.swift */; };
 		A8FE983429FE5F9000A1A2EF /* EDMSAEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FE983329FE5F9000A1A2EF /* EDMSAEUITests.swift */; };
@@ -50,12 +97,59 @@
 		891FDF121B770D63AF25ACDB /* Pods_EDMSAE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EDMSAE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95626AE9371312CF28E73ADC /* Pods-EDMSAETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EDMSAETests.release.xcconfig"; path = "Target Support Files/Pods-EDMSAETests/Pods-EDMSAETests.release.xcconfig"; sourceTree = "<group>"; };
 		A446F3E32552187F8FE9A3E1 /* Pods-EDMSAE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EDMSAE.release.xcconfig"; path = "Target Support Files/Pods-EDMSAE/Pods-EDMSAE.release.xcconfig"; sourceTree = "<group>"; };
+		A894E61A2A243C60001EC075 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		A894E61C2A243C97001EC075 /* CommodityManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommodityManagementViewController.swift; sourceTree = "<group>"; };
+		A894E61E2A243CBA001EC075 /* EDCommodityEditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCommodityEditingViewController.swift; sourceTree = "<group>"; };
+		A894E6202A243CDF001EC075 /* EDCommodityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCommodityCell.swift; sourceTree = "<group>"; };
+		A894E6222A243CFA001EC075 /* EDConfigSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDConfigSelectionView.swift; sourceTree = "<group>"; };
+		A894E6242A243D18001EC075 /* ExpressManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressManagementViewController.swift; sourceTree = "<group>"; };
+		A894E6262A243D43001EC075 /* EDUserOrderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDUserOrderTableView.swift; sourceTree = "<group>"; };
+		A894E6282A243D67001EC075 /* EDUserOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDUserOrderCell.swift; sourceTree = "<group>"; };
+		A894E62A2A243D7A001EC075 /* CommodityState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommodityState.swift; sourceTree = "<group>"; };
+		A894E62C2A243D8A001EC075 /* OrderState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderState.swift; sourceTree = "<group>"; };
+		A894E62E2A243DA7001EC075 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		A894E6302A243DBB001EC075 /* EDBillingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDBillingView.swift; sourceTree = "<group>"; };
+		A894E6322A243DD1001EC075 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		A894E6342A243DE8001EC075 /* District.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = District.swift; sourceTree = "<group>"; };
+		A894E6362A243DF5001EC075 /* AddressLavel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressLavel.swift; sourceTree = "<group>"; };
+		A894E6382A243E0C001EC075 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		A894E63A2A243E18001EC075 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		A894E63C2A243E31001EC075 /* EDComBillingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDComBillingCell.swift; sourceTree = "<group>"; };
+		A894E63E2A243E43001EC075 /* Commodity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commodity.swift; sourceTree = "<group>"; };
+		A894E6402A243E56001EC075 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		A894E6422A243E67001EC075 /* ComCag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComCag.swift; sourceTree = "<group>"; };
+		A894E6442A243E74001EC075 /* Sex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sex.swift; sourceTree = "<group>"; };
+		A894E6462A243E92001EC075 /* EDBillTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDBillTableViewController.swift; sourceTree = "<group>"; };
+		A894E6482A243EA5001EC075 /* EDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDViewController.swift; sourceTree = "<group>"; };
+		A894E64A2A243EBF001EC075 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A894E64C2A243EE5001EC075 /* EDUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDUser.swift; sourceTree = "<group>"; };
+		A894E64E2A243EFD001EC075 /* EDNetWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDNetWork.swift; sourceTree = "<group>"; };
+		A894E6502A243F2D001EC075 /* EDSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDSignInViewController.swift; sourceTree = "<group>"; };
+		A894E6522A243F52001EC075 /* TMSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMSignUpViewController.swift; sourceTree = "<group>"; };
+		A894E6542A243F5F001EC075 /* TMResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMResetPasswordViewController.swift; sourceTree = "<group>"; };
+		A894E6562A243F8E001EC075 /* EDCommodityRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCommodityRequest.swift; sourceTree = "<group>"; };
+		A894E6582A243FA0001EC075 /* EDOrderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDOrderRequest.swift; sourceTree = "<group>"; };
+		A894E65A2A243FAF001EC075 /* TMSys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMSys.swift; sourceTree = "<group>"; };
+		A894E65C2A243FBD001EC075 /* TMPlayerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMPlayerRequest.swift; sourceTree = "<group>"; };
+		A894E65E2A243FD1001EC075 /* TMUDKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMUDKeys.swift; sourceTree = "<group>"; };
+		A894E6602A243FE5001EC075 /* TMServerViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMServerViewConfig.swift; sourceTree = "<group>"; };
+		A894E6622A244004001EC075 /* TMServerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMServerView.swift; sourceTree = "<group>"; };
+		A894E6642A244017001EC075 /* TMSIgnInBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMSIgnInBtn.swift; sourceTree = "<group>"; };
+		A894E6662A244028001EC075 /* TMSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMSelectionView.swift; sourceTree = "<group>"; };
+		A894E6682A24403F001EC075 /* TMTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMTextField.swift; sourceTree = "<group>"; };
+		A894E66A2A24404E001EC075 /* TMTextFieldConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMTextFieldConfig.swift; sourceTree = "<group>"; };
+		A894E66C2A245674001EC075 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		A894E66E2A248AFC001EC075 /* EDComConfigTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDComConfigTableView.swift; sourceTree = "<group>"; };
+		A894E6702A248C3A001EC075 /* EDCommodityCofigTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCommodityCofigTableViewController.swift; sourceTree = "<group>"; };
+		A894E6732A249D84001EC075 /* EDComConfigEditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDComConfigEditingViewController.swift; sourceTree = "<group>"; };
+		A894E6752A24DB2C001EC075 /* TMDataConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDataConvert.swift; sourceTree = "<group>"; };
+		A894E6772A259C12001EC075 /* EDOptionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDOptionRequest.swift; sourceTree = "<group>"; };
 		A89C6CC92A074C0F00CC0ACA /* EDOrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDOrderDetailViewController.swift; sourceTree = "<group>"; };
 		A89C6CCB2A074CC800CC0ACA /* EDAddressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDAddressCell.swift; sourceTree = "<group>"; };
 		A8FE980F29FE5F8E00A1A2EF /* EDMSAE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EDMSAE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8FE981229FE5F8E00A1A2EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8FE981429FE5F8E00A1A2EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A8FE981629FE5F8E00A1A2EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A8FE981629FE5F8E00A1A2EF /* BillManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillManagementViewController.swift; sourceTree = "<group>"; };
 		A8FE981B29FE5F9000A1A2EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8FE982029FE5F9000A1A2EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8FE982529FE5F9000A1A2EF /* EDMSAETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EDMSAETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,8 +226,55 @@
 			children = (
 				A8FE981229FE5F8E00A1A2EF /* AppDelegate.swift */,
 				A8FE981429FE5F8E00A1A2EF /* SceneDelegate.swift */,
-				A8FE981629FE5F8E00A1A2EF /* ViewController.swift */,
+				A8FE981629FE5F8E00A1A2EF /* BillManagementViewController.swift */,
+				A894E6682A24403F001EC075 /* TMTextField.swift */,
+				A894E66A2A24404E001EC075 /* TMTextFieldConfig.swift */,
+				A894E6662A244028001EC075 /* TMSelectionView.swift */,
+				A894E6642A244017001EC075 /* TMSIgnInBtn.swift */,
+				A894E6622A244004001EC075 /* TMServerView.swift */,
+				A894E6602A243FE5001EC075 /* TMServerViewConfig.swift */,
+				A894E65E2A243FD1001EC075 /* TMUDKeys.swift */,
+				A894E65C2A243FBD001EC075 /* TMPlayerRequest.swift */,
+				A894E65A2A243FAF001EC075 /* TMSys.swift */,
+				A894E6582A243FA0001EC075 /* EDOrderRequest.swift */,
+				A894E6562A243F8E001EC075 /* EDCommodityRequest.swift */,
+				A894E6772A259C12001EC075 /* EDOptionRequest.swift */,
+				A894E6542A243F5F001EC075 /* TMResetPasswordViewController.swift */,
+				A894E6522A243F52001EC075 /* TMSignUpViewController.swift */,
+				A894E6502A243F2D001EC075 /* EDSignInViewController.swift */,
+				A894E64E2A243EFD001EC075 /* EDNetWork.swift */,
+				A894E64C2A243EE5001EC075 /* EDUser.swift */,
+				A894E64A2A243EBF001EC075 /* User.swift */,
+				A894E6482A243EA5001EC075 /* EDViewController.swift */,
+				A894E6462A243E92001EC075 /* EDBillTableViewController.swift */,
+				A894E6702A248C3A001EC075 /* EDCommodityCofigTableViewController.swift */,
+				A894E6442A243E74001EC075 /* Sex.swift */,
+				A894E6422A243E67001EC075 /* ComCag.swift */,
+				A894E6402A243E56001EC075 /* Option.swift */,
+				A894E63E2A243E43001EC075 /* Commodity.swift */,
+				A894E63C2A243E31001EC075 /* EDComBillingCell.swift */,
+				A894E63A2A243E18001EC075 /* Payment.swift */,
+				A894E6382A243E0C001EC075 /* Bill.swift */,
+				A894E6362A243DF5001EC075 /* AddressLavel.swift */,
+				A894E6342A243DE8001EC075 /* District.swift */,
+				A894E6322A243DD1001EC075 /* Address.swift */,
+				A894E6302A243DBB001EC075 /* EDBillingView.swift */,
+				A894E62E2A243DA7001EC075 /* Order.swift */,
+				A894E62C2A243D8A001EC075 /* OrderState.swift */,
+				A894E62A2A243D7A001EC075 /* CommodityState.swift */,
+				A894E6282A243D67001EC075 /* EDUserOrderCell.swift */,
+				A894E6262A243D43001EC075 /* EDUserOrderTableView.swift */,
+				A894E66C2A245674001EC075 /* StringExtension.swift */,
+				A894E6242A243D18001EC075 /* ExpressManagementViewController.swift */,
+				A894E6222A243CFA001EC075 /* EDConfigSelectionView.swift */,
+				A894E6202A243CDF001EC075 /* EDCommodityCell.swift */,
+				A894E6752A24DB2C001EC075 /* TMDataConvert.swift */,
+				A894E61E2A243CBA001EC075 /* EDCommodityEditingViewController.swift */,
+				A894E66E2A248AFC001EC075 /* EDComConfigTableView.swift */,
+				A894E61C2A243C97001EC075 /* CommodityManagementViewController.swift */,
+				A894E61A2A243C60001EC075 /* TabViewController.swift */,
 				A89C6CC92A074C0F00CC0ACA /* EDOrderDetailViewController.swift */,
+				A894E6732A249D84001EC075 /* EDComConfigEditingViewController.swift */,
 				A8FEE7792A07A5E2002BAA51 /* EDDeliViewController.swift */,
 				A89C6CCB2A074CC800CC0ACA /* EDAddressCell.swift */,
 				A8FE984229FE71FE00A1A2EF /* UIViewExtension.swift */,
@@ -410,12 +551,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A894E66F2A248AFC001EC075 /* EDComConfigTableView.swift in Sources */,
+				A894E6672A244028001EC075 /* TMSelectionView.swift in Sources */,
+				A894E62D2A243D8A001EC075 /* OrderState.swift in Sources */,
+				A894E65F2A243FD1001EC075 /* TMUDKeys.swift in Sources */,
+				A894E61D2A243C97001EC075 /* CommodityManagementViewController.swift in Sources */,
+				A894E6212A243CDF001EC075 /* EDCommodityCell.swift in Sources */,
+				A894E6372A243DF5001EC075 /* AddressLavel.swift in Sources */,
+				A894E6652A244017001EC075 /* TMSIgnInBtn.swift in Sources */,
+				A894E6762A24DB2C001EC075 /* TMDataConvert.swift in Sources */,
+				A894E64B2A243EBF001EC075 /* User.swift in Sources */,
+				A894E6252A243D18001EC075 /* ExpressManagementViewController.swift in Sources */,
+				A894E6312A243DBB001EC075 /* EDBillingView.swift in Sources */,
+				A894E6612A243FE5001EC075 /* TMServerViewConfig.swift in Sources */,
+				A894E61B2A243C60001EC075 /* TabViewController.swift in Sources */,
+				A894E6272A243D43001EC075 /* EDUserOrderTableView.swift in Sources */,
+				A894E62B2A243D7A001EC075 /* CommodityState.swift in Sources */,
 				A89C6CCA2A074C0F00CC0ACA /* EDOrderDetailViewController.swift in Sources */,
-				A8FE981729FE5F8E00A1A2EF /* ViewController.swift in Sources */,
+				A894E66D2A245674001EC075 /* StringExtension.swift in Sources */,
+				A894E63D2A243E31001EC075 /* EDComBillingCell.swift in Sources */,
+				A8FE981729FE5F8E00A1A2EF /* BillManagementViewController.swift in Sources */,
+				A894E6532A243F52001EC075 /* TMSignUpViewController.swift in Sources */,
+				A894E66B2A24404E001EC075 /* TMTextFieldConfig.swift in Sources */,
+				A894E6452A243E74001EC075 /* Sex.swift in Sources */,
+				A894E6352A243DE8001EC075 /* District.swift in Sources */,
+				A894E64D2A243EE5001EC075 /* EDUser.swift in Sources */,
+				A894E63F2A243E43001EC075 /* Commodity.swift in Sources */,
+				A894E6572A243F8E001EC075 /* EDCommodityRequest.swift in Sources */,
+				A894E6512A243F2D001EC075 /* EDSignInViewController.swift in Sources */,
+				A894E61F2A243CBA001EC075 /* EDCommodityEditingViewController.swift in Sources */,
+				A894E6292A243D67001EC075 /* EDUserOrderCell.swift in Sources */,
+				A894E65B2A243FAF001EC075 /* TMSys.swift in Sources */,
+				A894E6232A243CFA001EC075 /* EDConfigSelectionView.swift in Sources */,
+				A894E62F2A243DA7001EC075 /* Order.swift in Sources */,
+				A894E65D2A243FBD001EC075 /* TMPlayerRequest.swift in Sources */,
+				A894E6332A243DD1001EC075 /* Address.swift in Sources */,
 				A8FEE77A2A07A5E2002BAA51 /* EDDeliViewController.swift in Sources */,
+				A894E6392A243E0C001EC075 /* Bill.swift in Sources */,
+				A894E6432A243E67001EC075 /* ComCag.swift in Sources */,
+				A894E64F2A243EFD001EC075 /* EDNetWork.swift in Sources */,
+				A894E6782A259C12001EC075 /* EDOptionRequest.swift in Sources */,
+				A894E6742A249D84001EC075 /* EDComConfigEditingViewController.swift in Sources */,
+				A894E6552A243F5F001EC075 /* TMResetPasswordViewController.swift in Sources */,
+				A894E6472A243E92001EC075 /* EDBillTableViewController.swift in Sources */,
+				A894E6592A243FA0001EC075 /* EDOrderRequest.swift in Sources */,
+				A894E6632A244004001EC075 /* TMServerView.swift in Sources */,
 				A8FE981329FE5F8E00A1A2EF /* AppDelegate.swift in Sources */,
+				A894E6712A248C3A001EC075 /* EDCommodityCofigTableViewController.swift in Sources */,
 				A89C6CCC2A074CC800CC0ACA /* EDAddressCell.swift in Sources */,
 				A8FE984329FE71FE00A1A2EF /* UIViewExtension.swift in Sources */,
+				A894E63B2A243E18001EC075 /* Payment.swift in Sources */,
+				A894E6412A243E56001EC075 /* Option.swift in Sources */,
+				A894E6492A243EA6001EC075 /* EDViewController.swift in Sources */,
+				A894E6692A24403F001EC075 /* TMTextField.swift in Sources */,
 				A8FE981529FE5F8E00A1A2EF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
