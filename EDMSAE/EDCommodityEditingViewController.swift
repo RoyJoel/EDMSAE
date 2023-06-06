@@ -73,7 +73,7 @@ class EDCommodityEditingViewController: UIViewController, UITableViewDataSource 
         view.addSubview(configSelectionView)
         view.addSubview(leftBtn)
         view.addSubview(rightBtn)
-        view.bringSubviewToFront(configSelectionView)
+        view.bringSubviewToFront(cagSelectionView)
         
         nameLabel.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(12)
