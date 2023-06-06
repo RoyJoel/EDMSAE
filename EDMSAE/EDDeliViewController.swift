@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class EDDeliViewController: UIViewController {
+class EDDeliViewController: UIViewController, UITextFieldDelegate  {
     lazy var deliLabel: UILabel = {
         let label = UILabel()
         return label
@@ -62,5 +62,9 @@ class EDDeliViewController: UIViewController {
     
     @objc func confirmToSend() {
         
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
     }
 }

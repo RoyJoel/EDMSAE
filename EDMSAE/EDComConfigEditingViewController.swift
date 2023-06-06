@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class EDComConfigEditingViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class EDComConfigEditingViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate  {
     var option = Option()
     var completionHandler: ((Option) -> Void)?
     lazy var iconView: UIImageView = {
@@ -111,6 +111,10 @@ class EDComConfigEditingViewController: UIViewController, UIImagePickerControlle
         priceLabel.text = "价格"
         inventoryLabel.text = "库存"
         
+        introTextfield.textField.delegate = self
+        priceTextField.textField.delegate = self
+        inventoryTextField.textField.delegate = self
+        
         iconView.setCorner(radii: 15)
         imagePicker.delegate = self
         iconView.image = UIImage(systemName: "camera")
@@ -148,5 +152,8 @@ class EDComConfigEditingViewController: UIViewController, UIImagePickerControlle
         let option = Option(id: option.id, image: (iconView.image?.pngData() ?? Data()).base64EncodedString(), intro: introTextfield.textField.text ?? "", price: Double(priceTextField.textField.text ?? "0") ?? 0, inventory: Int(inventoryTextField.textField.text ?? "0") ?? 0)
         (completionHandler ?? {_ in})(option)
         dismiss(animated: true)
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
     }
 }

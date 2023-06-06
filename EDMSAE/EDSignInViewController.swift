@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import TMComponent
 
-class EDSignInViewController: UIViewController {
+class EDSignInViewController: UIViewController, UITextFieldDelegate  {
     lazy var loginNameTextField: EDTextField = {
         let textField = EDTextField()
         return textField
@@ -74,6 +74,8 @@ class EDSignInViewController: UIViewController {
         passwordTextField.setup(with: EDTextFieldConfig(placeholderText: "密码"))
         let signUpBtnConfig = TMButtonConfig(title: "新人？注册", action: #selector(signUpVCUp), actionTarget: self)
         signUpBtn.setUp(with: signUpBtnConfig)
+        loginNameTextField.textField.delegate = self
+        passwordTextField.textField.delegate = self
         let forgetPasswordBtnConfig = TMButtonConfig(title: "忘记密码？", action: #selector(resetPasswordVCUp), actionTarget: self)
         forgetPasswordBtn.setUp(with: forgetPasswordBtnConfig)
         // 设置 completion 回调
@@ -169,5 +171,15 @@ class EDSignInViewController: UIViewController {
     @objc func resetPasswordVCUp() {
         let vc = TMResetPasswordViewController()
         present(vc, animated: true)
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField === loginNameTextField.textField {
+            return passwordTextField.textField.becomeFirstResponder()
+        } else if textField === passwordTextField.textField {
+            signInBtn.handleTapGesture()
+            return textField.resignFirstResponder()
+        } else {
+            return textField.resignFirstResponder()
+        }
     }
 }

@@ -10,7 +10,7 @@ import SwiftyJSON
 import Alamofire
 
 class EDNetWork {
-    static let EDURL = "http://localhost:8080"
+    static let EDURL = "http://169.254.73.180:8080"
 
     static func get(_ parameters: String, headers: HTTPHeaders? = nil, completionHandler: @escaping (JSON?, Error?) -> Void) {
         AF.request(URL(string: EDURL + parameters)!, headers: headers).response { response in

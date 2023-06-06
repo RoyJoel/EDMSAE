@@ -11,7 +11,7 @@ import TMComponent
 import Alamofire
 import SwiftyJSON
 
-class EDAddressCell: UITableViewCell {
+class EDAddressCell: UITableViewCell, UITextFieldDelegate  {
     var address = Address()
     lazy var nameAmdSexLabel: UILabel = {
         let label = UILabel()
@@ -358,6 +358,9 @@ class EDAddressEditingViewController: UIViewController {
     @objc func saveAddress() {
         (saveCompletionHandler ?? { _ in })(getAddressInfo())
         navigationController?.popViewController(animated: true)
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
     }
 }
 

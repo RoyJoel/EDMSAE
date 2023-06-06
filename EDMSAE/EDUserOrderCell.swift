@@ -16,6 +16,7 @@ class EDUserOrderCell: UITableViewCell {
 
     lazy var BillingView: EDBillingView = {
         let view = EDBillingView()
+        view.isOrderCell = true
         return view
     }()
 

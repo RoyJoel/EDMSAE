@@ -37,6 +37,7 @@ class EDOrderDetailViewController: UIViewController {
     
     lazy var billingView: EDBillingView = {
         let view = EDBillingView()
+        view.isOrderCell = true
         return view
     }()
     

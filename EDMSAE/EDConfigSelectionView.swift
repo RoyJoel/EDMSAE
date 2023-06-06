@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import TMComponent
 
-class EDComConfigView: UITableViewCell {
+class EDComConfigView: UITableViewCell  {
     lazy var iconView: UIImageView = {
         let imageView = UIImageView()
         return imageView

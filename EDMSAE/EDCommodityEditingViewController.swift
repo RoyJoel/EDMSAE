@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import TMComponent
 
-class EDCommodityEditingViewController: UIViewController, UITableViewDataSource {
+class EDCommodityEditingViewController: UIViewController, UITableViewDataSource, UITextFieldDelegate, UITextViewDelegate  {
     var configItems = ComCag.allCases
     var com = Commodity()
     var completionHandler: ((Commodity) -> Void)?
@@ -178,6 +178,8 @@ class EDCommodityEditingViewController: UIViewController, UITableViewDataSource 
         rightBtn.backgroundColor = UIColor(named: "TennisBlur")
         leftBtn.setTitleColor(.black, for: .normal)
         rightBtn.setTitleColor(.black, for: .normal)
+        nameTextField.textField.delegate = self
+        introTextView.delegate = self
     }
     
     func getCommodityInfo() -> Commodity {
@@ -253,5 +255,12 @@ class EDCommodityEditingViewController: UIViewController, UITableViewDataSource 
             
             NotificationCenter.default.post(name: Notification.Name(ToastNotification.refreshCommoditiesData.notificationName.rawValue), object: nil)
         }
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+    
+    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
+        textView.resignFirstResponder()
     }
 }

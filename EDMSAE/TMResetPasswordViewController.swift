@@ -10,7 +10,7 @@ import UIKit
 import TMComponent
 import LocalAuthentication
 
-class TMResetPasswordViewController: UIViewController {
+class TMResetPasswordViewController: UIViewController, UITextFieldDelegate {
     lazy var accountLabel: UILabel = {
         let label = UILabel()
         return label
@@ -249,5 +249,8 @@ class TMResetPasswordViewController: UIViewController {
                 present(ac, animated: true)
             }
         }
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
     }
 }

@@ -49,7 +49,7 @@ class TMSignInBtn: UILabel {
         })
     }
 
-    @objc private func handleTapGesture() {
+    @objc func handleTapGesture() {
         // 执行弹跳动画
         startBouncing()
         completion?()

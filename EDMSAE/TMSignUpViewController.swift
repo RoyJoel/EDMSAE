@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import TMComponent
 
-class TMSignUpViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class TMSignUpViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate  {
     let configItems = ["起个名字吧", "为你选一张头像", "你的性别是", "设置用户名", "设置密码"]
     var currentIndex = 0
 
@@ -338,5 +338,8 @@ class TMSignUpViewController: UIViewController, UIImagePickerControllerDelegate,
     @objc func changeIcon() {
         imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true)
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
     }
 }
